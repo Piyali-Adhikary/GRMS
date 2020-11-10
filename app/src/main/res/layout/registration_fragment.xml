@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="regisViewModel"
+            type="com.piyali.grms_kotlin.ui.registration.RegistrationViewModel" />
+
+        <variable
+            name="regisActivity"
+            type="com.piyali.grms_kotlin.ui.registration.RegistrationFragment" />
+
+        <variable
+            name="registerRequest"
+            type="com.piyali.grms_kotlin.data.model.RegisterRequest" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".user.registration.view.RegistrationActivity">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:elevation="2dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3880ff"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:id="@+id/text_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+<!--                    android:text="@={regisViewModel.register.title}"-->
+
+                    <TextView
+                        android:id="@+id/text_main_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp" />
+<!--                        android:text="@={regisViewModel.register.mainTitle}"-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".10" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".90" />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+<!--            android:text="@={regisViewModel.register.name}"-->
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:maxLength="100"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/text_name" />
+<!--            android:text="@={registerRequest.nameVal}"-->
+            <TextView
+                android:id="@+id/text_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/edit_name" />
+<!--            android:text="@={regisViewModel.register.mobile}"-->
+
+            <EditText
+                android:id="@+id/edit_mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:maxLength="10"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/text_mobile" />
+<!--            android:text="@={registerRequest.mobileNo}"-->
+            <TextView
+                android:id="@+id/text_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/edit_mobile" />
+<!--            android:text="@={regisViewModel.register.email}"-->
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:maxLength="100"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/text_email" />
+<!--            android:text="@={registerRequest.emailVal}"-->
+
+            <TextView
+                android:id="@+id/text_alternate_mob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+<!--            android:text="@={regisViewModel.register.alternateMobile}"-->
+
+            <EditText
+                android:id="@+id/edit_alternate_mob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:maxLength="10"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/text_alternate_mob" />
+<!--            android:text="@={registerRequest.contactAlterVal}"-->
+
+            <TextView
+                android:id="@+id/text_father"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/edit_alternate_mob" />
+<!--            android:text="@={regisViewModel.register.fatherHusband}"-->
+
+            <EditText
+                android:id="@+id/edit_father"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:maxLength="200"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/text_father" />
+<!--            android:text="@={registerRequest.fnameVal}"-->
+
+            <TextView
+                android:id="@+id/text_district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/edit_father" />
+<!--            android:text="@={regisViewModel.register.district}"-->
+
+            <Spinner
+                android:id="@+id/spinner_district"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner_underline"
+                android:paddingBottom="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/text_district" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spinner_district"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/spinner_district"
+                app:srcCompat="@drawable/ic_arrow_drop_down" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_district">
+
+                <RadioButton
+                    android:id="@+id/radio_rural"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textColor="@color/textColor" />
+<!--                android:text="@={regisViewModel.register.rural}"-->
+
+                <RadioButton
+                    android:id="@+id/radio_urban"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor" />
+<!--                android:text="@={regisViewModel.register.urban}"-->
+
+            </RadioGroup>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_rural"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/radio_group_type">
+
+                <TextView
+                    android:id="@+id/text_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/textColor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+<!--                android:text="@={regisViewModel.register.block}"-->
+
+                <Spinner
+                    android:id="@+id/spinner_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_block"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="8dp"
+                    android:background="@drawable/spinner_underline"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_block"/>
+
+                <ImageView
+                    android:id="@+id/image_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/spinner_block"
+                    app:srcCompat="@drawable/ic_arrow_drop_down"
+                    tools:layout_editor_absoluteX="305dp"
+                    tools:layout_editor_absoluteY="3dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/spinner_block"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/spinner_block"/>
+
+                <TextView
+                    android:id="@+id/text_gp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinner_block"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/textColor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_block"/>
+<!--                android:text="@={regisViewModel.register.gramPanchayat}"-->
+
+                <Spinner
+                    android:id="@+id/spinner_gp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_gp"
+                    android:layout_marginTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:background="@drawable/spinner_underline"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_gp"/>
+
+                <ImageView
+                    android:id="@+id/image_gp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/spinner_block"
+                    app:srcCompat="@drawable/ic_arrow_drop_down"
+                    tools:layout_editor_absoluteX="305dp"
+                    tools:layout_editor_absoluteY="3dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/spinner_gp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/spinner_gp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView_village"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/cl_rural" />
+<!--            android:text="@={regisViewModel.register.villageLandmark}"-->
+
+            <EditText
+                android:id="@+id/edit_village"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:maxLength="250"
+                android:maxLines="20"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textView_village"
+                tools:layout_editor_absoluteX="82dp"
+                tools:layout_editor_absoluteY="753dp" />
+<!--            android:text="@={registerRequest.landVal}"-->
+
+            <TextView
+                android:id="@+id/text_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/edit_village" />
+<!--            android:text="@={regisViewModel.register.pincode}"-->
+
+            <EditText
+                android:id="@+id/edit_pin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="6"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/text_pin" />
+<!--            android:text="@={registerRequest.pinVal}"-->
+
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/layout_register_button_bg"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/edit_pin" />
+<!--            android:onClick="@{()-> regisActivity.onRegisterButtonClick(registerRequest)}"-->
+<!--            android:text="@={regisViewModel.register.register}"-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/footer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_register" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

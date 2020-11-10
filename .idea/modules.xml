@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/GRMS.iml" filepath="$PROJECT_DIR$/.idea/GRMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GRMS_Kotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/GRMS_Kotlin.iml" group="GRMS_Kotlin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="GRMS_Kotlin/app" />
     </modules>
   </component>
 </project>

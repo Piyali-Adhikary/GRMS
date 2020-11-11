@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.xwray:groupie-databinding:2.3.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2767281b250b98e71c4728bea019843e/jetified-groupie-databinding-2.3.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2767281b250b98e71c4728bea019843e/jetified-groupie-databinding-2.3.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2767281b250b98e71c4728bea019843e/jetified-groupie-databinding-2.3.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/06e34299bba3dd23592b724624d8c1b1/jetified-groupie-databinding-2.3.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/06e34299bba3dd23592b724624d8c1b1/jetified-groupie-databinding-2.3.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/06e34299bba3dd23592b724624d8c1b1/jetified-groupie-databinding-2.3.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.xwray/groupie-databinding/2.3.0/708cf8b3dd07d45ee1d0f2f7ba9115808e6be1a8/groupie-databinding-2.3.0-javadoc.jar!/" />

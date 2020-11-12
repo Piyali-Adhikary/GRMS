@@ -1,0 +1,191 @@
+{
+  "multiLanguage": {
+    "en": {
+      "register": {
+        "title": "Welcome to Grievance Redressal \n Management System",
+        "main_title": "Registration Information",
+        "name": "Name *",
+        "mobile": "Mobile (10 Digit)*",
+        "email": "Email",
+        "alternate_mobile": "Alternate Phone Number (10 Digit)",
+        "father_husband": "Father / Husband's Name",
+        "district": "District *",
+        "rural": "Rural",
+        "urban": "Urban",
+        "block": "Block *",
+        "gram_panchayat": "Gram Panchayat *",
+        "village_landmark": "Village / Landmark *",
+        "pincode": "Pin code *",
+        "register": "Register",
+        "alerts": {
+          "enter_name": "Enter your name",
+          "enter_valid_name": "Name should have alphabets only",
+          "enter_mobile": "Enter your mobile No.",
+          "enter_valid_mobile": "Enter valid mobile number",
+          "enter_valid_email": "Enter valid email",
+          "enter_valid_alternate_no": "Enter valid alternate number",
+          "enter_father_husband": "Enter father / husband name correctly",
+          "enter_district": "Select your district",
+          "enter_block": "Select Your block",
+          "enter_gp": "Select Your gram panchayat",
+          "enter_village_details": "Enter Village Name / Landmark",
+          "enter_pincode": "Enter valid pin code",
+          "enter_valid_pincode": "Enter valid pin code with 6 digits",
+          "register_error": "Registration Error!"
+        }
+      },
+      "otp": {
+        "title": "Verify Account",
+        "title_1": "We have sent you an OTP on registered",
+        "title_2": "mobile number",
+        "enter_otp": "Enter your OTP",
+        "verify": "Verify",
+        "otp_send_failed": "Cannot send OTP, Try Again!",
+        "otp_match_error": "Please enter valid OTP"
+      },
+      "grievance": {
+        "title": "Grievance Information",
+        "sub_title": "Grievance Information",
+        "grievance_demand": "Is Grievance or Demand ? *",
+        "grievance_type": "Grievance Type *",
+        "service_related": "Service Related to *",
+        "scheme": "Scheme",
+        "grievance_level": "Grievance Level *",
+        "district": "District *",
+        "block": "Block *",
+        "gram_panchayat": "Gram Panchayat *",
+        "details": "Details *",
+        "photo_label": "Click to Take or Upload Photo",
+        "submit": "Submit",
+        "alerts": {
+          "camera_error": "No image clicked",
+          "select_grievance_demand": "Select Grievance or Demand",
+          "select_grievance_type": "Select Grievance Type",
+          "select_service_related": "Select Service",
+          "select_scheme": "Select Scheme",
+          "select_grievance_level": "Select Grievance Level",
+          "select_district": "Select District",
+          "schema": "Please Select Schema",
+          "select_block": "Select Block",
+          "select_gp": "Select Gram Panchayat",
+          "enter_details": "Enter Details"
+        }
+      },
+      "home_page": {
+        "title": "Home",
+        "welcome": "Welcome",
+        "register_grievance": "Register \n Grievance",
+        "status_grievance": "Status of \n Grievance",
+        "confirm": "Confirm",
+        "logout": "Do you want to Re-register?",
+        "yes": "Yes",
+        "no": "Cancel"
+      },
+      "grievance_page": {
+        "title": "Grievance Status",
+        "no_status": "No grievance or demand available"
+      },
+      "about_page": {
+        "title": "About"
+      },
+      "tabs": {
+        "home": "Home",
+        "status": "Grievance Status",
+        "about": "About"
+      }
+    },
+    "bn": {
+      "register": {
+        "title": "অভিযোগ প্রতিবিধান ব্যবস্থাপনায় আপনাকে স্বাগত",
+        "main_title": "নিবন্ধীকরন তথ্য",
+        "name": "নাম *",
+        "mobile": "মোবাইল নম্বর (দশ অঙ্ক)*",
+        "email": "ই-মেল",
+        "alternate_mobile": "অন্য একটি ফোন নম্বর (দশ অঙ্ক)",
+        "father_husband": "পিতা / স্বামীর নাম",
+        "district": "জেলা *",
+        "rural": "গ্রাম",
+        "urban": "শহর",
+        "block": "ব্লক *",
+        "gram_panchayat": "গ্রাম পঞ্চায়েত *",
+        "village_landmark": "গ্রামের বিশেষ জায়গা *",
+        "pincode": "পিন কোড *",
+        "register": "নিবন্ধন করুন",
+        "alerts": {
+          "enter_name": "নিজের নাম লিখুন",
+          "enter_valid_name": "সঠিকভাবে আপনার নিজের নাম লিখুন",
+          "enter_mobile": "আপনার মোবাইল নম্বর লিখুন",
+          "enter_valid_mobile": "সঠিকভাবে আপনার মোবাইল নম্বর লিখুন",
+          "enter_valid_email": "বৈধ ইমেইল লিখুন",
+          "enter_valid_alternate_no": "সঠিকভাবে আপনার বিকল্প মোবাইল নম্বর লিখুন",
+          "enter_father_husband": "সঠিকভাবে আপনার পিতার বা স্বামীর নাম লিখুন",
+          "enter_district": "আপনার জেলা নির্বাচন করুন",
+          "enter_block": "আপনার ব্লক নির্বাচন করুন",
+          "enter_gp": "আপনার গ্রাম পঞ্চায়েত নির্বাচন করুন",
+          "enter_village_details": "আপনার গ্রামের বিবরণ লিখুন",
+          "enter_pincode": "আপনার পিনকোড লিখুন",
+          "enter_valid_pincode": "\n6 অঙ্ক সহ বৈধ পিন কোড লিখুন",
+          "register_error": "রেজিস্ট্রেশন ব্যর্থ হয়েছে"
+        }
+      },
+      "otp": {
+        "title": "এ্যাকাউন্ট নিশ্চিতকরণ",
+        "title_1": "আমরা আপনাকে, আপনার মোবাইল নাম্বারে",
+        "title_2": "একটি ও.টি.পি পাঠিয়েছি",
+        "enter_otp": "আপনার ও.টি.পি লিখুন",
+        "verify": "যাচাই করুন",
+        "otp_send_failed": "ও.টি.পি পাঠাতে ব্যর্থ হয়েছে, আবার চেষ্টা করুন",
+        "otp_match_error": "সঠিক ও.টি.পি লিখুন দয়া করে"
+      },
+      "grievance": {
+        "title": "অভিযোগ",
+        "sub_title": "অভিযোগ সম্পর্কে তথ্য",
+        "grievance_demand": "অভিযোগ অথবা চাহিদা ? *",
+        "grievance_type": "অভিযোগের ধরন *",
+        "service_related": "পরিসেবা *",
+        "scheme": "পরিকল্পনা",
+        "grievance_level": "অভিযোগ স্তর *",
+        "district": "জেলা *",
+        "block": "ব্লক",
+        "gram_panchayat": "গ্রাম পঞ্চায়েত *",
+        "details": "বিস্তারিত বিবরণ *",
+        "photo_label": "ছবি তুলতে বা আপলোড করতে ক্লিক করুন",
+        "submit": "জমা দিন",
+        "alerts": {
+          "camera_error": "ছবি ক্লিক করা হয় না",
+          "select_grievance_demand": "অভিযোগ বা চাহিদা নির্বাচন করুন",
+          "select_grievance_type": "অভিযোগের ধরন নির্বাচন করুন",
+          "select_service_related": "সেবা নির্বাচন করুন",
+          "select_scheme": "প্রকল্প নির্বাচন করুন",
+          "select_grievance_level": "অভিযোগ স্তর নির্বাচন করুন",
+          "select_district": "জেলা নির্বাচন করুন",
+          "select_block": "ব্লক নির্বাচন করুন",
+          "select_gp": "গ্রাম পঞ্চায়েত নির্বাচন করুন",
+          "enter_details": "বিস্তারিত বিবরণ লিখুন"
+        }
+      },
+      "home_page": {
+        "title": "হোম",
+        "welcome": "স্বাগত",
+        "register_grievance": "অভিযোগ নিবন্ধন করুন",
+        "status_grievance": "অভিযোগের বর্তমান অগ্রগতি",
+        "confirm": "নিশ্চিত করুন",
+        "logout": "আপনি পুনরায় নিবন্ধন করতে চান",
+        "yes": "হাঁ",
+        "no": "না"
+      },
+      "grievance_page": {
+        "title": "অভিযোগের বর্তমান অগ্রগতি",
+        "no_status": "কোন অভিযোগ বা চাহিদা উপলব্ধ নেই"
+      },
+      "about_page": {
+        "title": "অ্যাপ্লিকেশন সম্পর্কে"
+      },
+      "tabs": {
+        "home": "হোম",
+        "status": "অভিযোগের অগ্রগতি",
+        "about": "সম্পর্কিত"
+      }
+    }
+  }
+}

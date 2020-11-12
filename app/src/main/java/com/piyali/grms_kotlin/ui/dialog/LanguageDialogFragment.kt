@@ -1,20 +1,32 @@
 package com.piyali.grms_kotlin.ui.dialog
 
+import android.app.Application
 import android.app.Dialog
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
-import com.piyali.grms_kotlin.R
+import androidx.lifecycle.ViewModelProvider
+import com.piyali.grms_kotlin.data.registration.repository.local.RegistrationLocalRepository
+import com.piyali.grms_kotlin.ui.registration.RegistrationModelFactory
+import com.piyali.grms_kotlin.ui.registration.RegistrationViewModel
 import com.piyali.grms_kotlin.util.AppConstants
 
 class LanguageDialogFragment : DialogFragment() {
 
     private var mLanguage: String = AppConstants.LANGUAGE_ENGLISH
 
+    private val viewModel: RegistrationViewModel by lazy {
+        val activity = requireNotNull(this.activity) {
+            "You can only access the viewModel after onActivityCreated()"
+        }
+        val repository = RegistrationLocalRepository()
+        val factory = RegistrationModelFactory(activity.application,repository)
+        ViewModelProvider(this@LanguageDialogFragment, factory).get(RegistrationViewModel::class.java)
+    }
+
     companion object {
 
         //const val TAG = "LanguageDialogFragment"
-
         private const val KEY_TITLE = "KEY_TITLE"
         private const val KEY_SUBTITLE = "KEY_SUBTITLE"
 
@@ -40,7 +52,7 @@ class LanguageDialogFragment : DialogFragment() {
             }
         }
         builder.setPositiveButton(AppConstants.OK){ dialogInterface, which ->
-//        mRegistrationViewModel.fetchTextViewData(mLanguage, this@RegistrationActivity)
+            viewModel.fetchTextViewData(mLanguage)
 //        observeDistrictData()
             dismiss()
         }

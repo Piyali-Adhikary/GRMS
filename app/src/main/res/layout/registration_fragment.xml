@@ -15,7 +15,7 @@
 
         <variable
             name="registerRequest"
-            type="com.piyali.grms_kotlin.data.model.RegisterRequest" />
+            type="com.piyali.grms_kotlin.data.registration.model.RegisterRequest" />
     </data>
 
     <ScrollView

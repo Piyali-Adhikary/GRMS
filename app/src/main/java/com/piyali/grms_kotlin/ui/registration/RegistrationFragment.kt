@@ -1,5 +1,6 @@
 package com.piyali.grms_kotlin.ui.registration
 
+import android.app.Application
 import android.content.Context
 import android.database.DatabaseUtils
 import androidx.lifecycle.ViewModelProviders
@@ -12,16 +13,18 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.piyali.grms_kotlin.R
+import com.piyali.grms_kotlin.data.registration.repository.local.RegistrationLocalRepository
 import com.piyali.grms_kotlin.databinding.RegistrationFragmentBinding
 import com.piyali.grms_kotlin.ui.dialog.LanguageDialogFragment
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.x.kodein
+import org.kodein.di.generic.instance
 
 class RegistrationFragment : Fragment(), KodeinAware {
 
     override val kodein by kodein()
-
+    //private val factory : RegistrationViewModel by instance()
     companion object {
         fun newInstance() = RegistrationFragment()
     }
@@ -29,7 +32,11 @@ class RegistrationFragment : Fragment(), KodeinAware {
     private lateinit var binding:RegistrationFragmentBinding
 
     private val viewModel: RegistrationViewModel by lazy {
-        val factory = RegistrationModelFactory()
+        val activity = requireNotNull(this.activity) {
+            "You can only access the viewModel after onActivityCreated()"
+        }
+        val repository = RegistrationLocalRepository()
+        val factory = RegistrationModelFactory(activity.application,repository)
         ViewModelProvider(this@RegistrationFragment, factory).get(RegistrationViewModel::class.java)
     }
 
